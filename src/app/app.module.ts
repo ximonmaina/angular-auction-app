@@ -13,6 +13,8 @@ import { SearchComponent } from './search/search.component';
 import { StarsComponent } from './stars/stars.component';
 import {ProductService} from './shared/product.service';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
+import {AuctionMaterialModule} from './auction-material/auction-material.module';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NoopAnimationsModule
+    NoopAnimationsModule,
+    AuctionMaterialModule,
+    FormsModule
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
